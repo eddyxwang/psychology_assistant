@@ -1,0 +1,795 @@
+# A tibble: 3 × 3
+  Wave  Participants Percent
+  <fct>        <int>   <dbl>
+1 T1             202   100  
+2 T2             180    89.1
+3 T3             153    75.7
+年龄差异 t-test: t = 1.78 df = 70.25 p = 0.079 95% CI [ -0.15 ,  2.75 ]
+性别差异 chi-squared test: X2 = 0.33 df = 1 p = 0.564 
+Depression 差异 t-test: t = 1.95 df = 73.66 p = 0.055 95% CI [ -0.03 ,  3.09 ]
+Anxiety 差异 t-test: t = 0.94 df = 86.5 p = 0.348 95% CI [ -0.66 ,  1.86 ]
+Stress 差异 t-test: t = 0.91 df = 86.36 p = 0.364 95% CI [ -0.74 ,  1.99 ]
+Loneliness 差异 t-test: t = 1.51 df = 91.85 p = 0.134 95% CI [ -0.19 ,  1.43 ]
+Descriptive Statistics:
+─────────────────────────────────────────────────────────────────
+              N  Mean   SD | Median   Min   Max Skewness Kurtosis
+─────────────────────────────────────────────────────────────────
+Age         202 24.06 4.05 |  23.00 19.00 48.00     2.09     7.04
+Gender*     202  1.50 0.50 |   1.00  1.00  2.00     0.02    -2.01
+Depression  202  5.41 4.52 |   4.00  0.00 21.00     0.96     0.16
+Anxiety     202  4.69 4.02 |   3.50  0.00 18.00     1.08     0.52
+Stress      202  6.52 4.34 |   6.00  0.00 18.00     0.50    -0.54
+Loneliness  202  6.76 2.67 |   6.00  3.00 14.00     0.65    -0.26
+─────────────────────────────────────────────────────────────────
+
+NOTE: `Gender` transformed to numeric.
+NOTE: `Gender` transformed to numeric.
+
+Pearson's r and 95% confidence intervals:
+────────────────────────────────────────────────────────
+                           r      [95% CI]     p       N
+────────────────────────────────────────────────────────
+Age-Gender             -0.03 [-0.17, 0.11]  .654     202
+Age-Depression         -0.00 [-0.14, 0.13]  .960     202
+Age-Anxiety            -0.08 [-0.22, 0.06]  .259     202
+Age-Stress              0.02 [-0.12, 0.16]  .774     202
+Age-Loneliness          0.08 [-0.06, 0.21]  .277     202
+Gender-Depression       0.04 [-0.09, 0.18]  .537     202
+Gender-Anxiety          0.00 [-0.14, 0.14]  .967     202
+Gender-Stress          -0.03 [-0.17, 0.11]  .663     202
+Gender-Loneliness       0.04 [-0.10, 0.18]  .554     202
+Depression-Anxiety      0.76 [ 0.70, 0.82] <.001 *** 202
+Depression-Stress       0.74 [ 0.67, 0.80] <.001 *** 202
+Depression-Loneliness   0.66 [ 0.57, 0.73] <.001 *** 202
+Anxiety-Stress          0.82 [ 0.77, 0.86] <.001 *** 202
+Anxiety-Loneliness      0.62 [ 0.53, 0.70] <.001 *** 202
+Stress-Loneliness       0.67 [ 0.59, 0.74] <.001 *** 202
+────────────────────────────────────────────────────────
+
+
+Descriptive Statistics:
+─────────────────────────────────────────────────────────────────
+              N  Mean   SD | Median   Min   Max Skewness Kurtosis
+─────────────────────────────────────────────────────────────────
+Age         180 23.81 3.68 |  23.00 19.00 41.00     1.69     3.66
+Gender*     180  1.50 0.50 |   1.50  1.00  2.00     0.00    -2.01
+Depression  180  2.98 4.07 |   1.00  0.00 18.00     1.45     1.52
+Anxiety     180  2.48 3.20 |   1.00  0.00 13.00     1.24     0.63
+Stress      180  5.46 3.96 |   5.00  0.00 16.00     0.53    -0.62
+Loneliness  180  4.77 2.47 |   3.00  3.00 13.00     1.41     1.19
+─────────────────────────────────────────────────────────────────
+
+NOTE: `Gender` transformed to numeric.
+NOTE: `Gender` transformed to numeric.
+
+Pearson's r and 95% confidence intervals:
+────────────────────────────────────────────────────────
+                           r      [95% CI]     p       N
+────────────────────────────────────────────────────────
+Age-Gender             -0.00 [-0.15, 0.14]  .968     180
+Age-Depression         -0.05 [-0.20, 0.09]  .486     180
+Age-Anxiety            -0.10 [-0.25, 0.04]  .171     180
+Age-Stress             -0.04 [-0.19, 0.10]  .551     180
+Age-Loneliness          0.12 [-0.03, 0.26]  .110     180
+Gender-Depression       0.01 [-0.13, 0.16]  .855     180
+Gender-Anxiety         -0.03 [-0.17, 0.12]  .711     180
+Gender-Stress          -0.07 [-0.22, 0.08]  .338     180
+Gender-Loneliness       0.02 [-0.12, 0.17]  .741     180
+Depression-Anxiety      0.71 [ 0.63, 0.78] <.001 *** 180
+Depression-Stress       0.69 [ 0.60, 0.76] <.001 *** 180
+Depression-Loneliness   0.51 [ 0.40, 0.61] <.001 *** 180
+Anxiety-Stress          0.73 [ 0.65, 0.79] <.001 *** 180
+Anxiety-Loneliness      0.57 [ 0.46, 0.66] <.001 *** 180
+Stress-Loneliness       0.40 [ 0.27, 0.52] <.001 *** 180
+────────────────────────────────────────────────────────
+
+
+Descriptive Statistics:
+─────────────────────────────────────────────────────────────────
+              N  Mean   SD | Median   Min   Max Skewness Kurtosis
+─────────────────────────────────────────────────────────────────
+Age         153 23.75 3.81 |  23.00 19.00 41.00     1.69     3.50
+Gender*     153  1.51 0.50 |   2.00  1.00  2.00    -0.04    -2.01
+Depression  153  5.19 3.59 |   4.00  1.00 21.00     1.59     2.87
+Anxiety     153  2.43 3.08 |   1.00  0.00 14.00     1.48     1.90
+Stress      153  5.76 3.84 |   5.00  0.00 21.00     1.06     1.38
+Loneliness  153  6.69 1.99 |   6.00  4.00 14.00     1.20     1.19
+─────────────────────────────────────────────────────────────────
+
+NOTE: `Gender` transformed to numeric.
+NOTE: `Gender` transformed to numeric.
+
+Pearson's r and 95% confidence intervals:
+────────────────────────────────────────────────────────
+                           r      [95% CI]     p       N
+────────────────────────────────────────────────────────
+Age-Gender             -0.01 [-0.17, 0.14]  .862     153
+Age-Depression         -0.08 [-0.24, 0.08]  .302     153
+Age-Anxiety            -0.15 [-0.30, 0.01]  .060 .   153
+Age-Stress              0.00 [-0.16, 0.16]  .979     153
+Age-Loneliness          0.15 [-0.01, 0.30]  .060 .   153
+Gender-Depression       0.08 [-0.08, 0.24]  .319     153
+Gender-Anxiety         -0.02 [-0.18, 0.14]  .768     153
+Gender-Stress          -0.07 [-0.23, 0.09]  .387     153
+Gender-Loneliness       0.00 [-0.16, 0.16]  .970     153
+Depression-Anxiety      0.74 [ 0.66, 0.80] <.001 *** 153
+Depression-Stress       0.74 [ 0.66, 0.80] <.001 *** 153
+Depression-Loneliness   0.60 [ 0.49, 0.70] <.001 *** 153
+Anxiety-Stress          0.77 [ 0.70, 0.83] <.001 *** 153
+Anxiety-Loneliness      0.56 [ 0.44, 0.66] <.001 *** 153
+Stress-Loneliness       0.56 [ 0.44, 0.66] <.001 *** 153
+────────────────────────────────────────────────────────
+
+
+Data: data
+Models:
+model_no_int: formula_no_int
+model: formula
+             npar     AIC     BIC   logLik -2*log(L)   Chisq Df Pr(>Chisq)    
+model_no_int   10 2784.49 2827.31 -1382.24   2764.49                          
+model          16 2759.03 2827.55 -1363.52   2727.03 37.4552  6 1.4353e-06 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Model Summary
+
+───────────────────────────────────
+                     (1) Depression
+───────────────────────────────────
+(Intercept)             5.86 ***   
+                       (1.77)      
+SubgroupF               0.20       
+                       (0.83)      
+SubgroupM               0.29       
+                       (0.83)      
+SubgroupR               0.12       
+                       (0.84)      
+WaveT2                 -0.28       
+                       (0.46)      
+WaveT3                  0.12       
+                       (0.48)      
+Age                    -0.03       
+                       (0.07)      
+GenderMale              0.32       
+                       (0.54)      
+SubgroupF:WaveT2       -2.66 ***   
+                       (0.63)      
+SubgroupM:WaveT2       -3.25 ***   
+                       (0.63)      
+SubgroupR:WaveT2       -2.48 ***   
+                       (0.63)      
+SubgroupF:WaveT3       -0.24       
+                       (0.67)      
+SubgroupM:WaveT3       -0.47       
+                       (0.67)      
+SubgroupR:WaveT3        0.41       
+                       (0.66)      
+───────────────────────────────────
+Marginal R^2            0.10       
+Conditional R^2         0.77       
+AIC                  2758.67       
+BIC                  2827.19       
+Num. obs.             535          
+Num. groups: ID       202          
+Var: ID (Intercept)    12.97       
+Var: Residual           4.38       
+───────────────────────────────────
+Note. * p < .05, ** p < .01, *** p < .001.
+
+Wave = T1:
+ Subgroup  emmean       SE     df lower.CL upper.CL t.ratio p.value
+ C        5.26494 0.589062 265.09  4.10511  6.42478   8.938  <.0001
+ F        5.46647 0.583782 264.97  4.31703  6.61592   9.364  <.0001
+ M        5.55563 0.585493 264.56  4.40281  6.70845   9.489  <.0001
+ R        5.38119 0.593820 263.98  4.21197  6.55042   9.062  <.0001
+
+Wave = T2:
+ Subgroup  emmean       SE     df lower.CL upper.CL t.ratio p.value
+ C        4.98960 0.616906 302.48  3.77563  6.20357   8.088  <.0001
+ F        2.53559 0.597329 283.53  1.35982  3.71135   4.245  <.0001
+ M        2.03025 0.596743 279.84  0.85557  3.20492   3.402  0.0008
+ R        2.62462 0.604458 278.21  1.43473  3.81451   4.342  <.0001
+
+Wave = T3:
+ Subgroup  emmean       SE     df lower.CL upper.CL t.ratio p.value
+ C        5.38894 0.633852 327.20  4.14200  6.63588   8.502  <.0001
+ F        5.35171 0.617402 313.42  4.13693  6.56649   8.668  <.0001
+ M        5.20516 0.623079 319.08  3.97930  6.43102   8.354  <.0001
+ R        5.91032 0.621238 302.87  4.68783  7.13280   9.514  <.0001
+
+Results are averaged over the levels of: Gender 
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+Subgroup = C:
+ contrast  estimate       SE     df  lower.CL upper.CL t.ratio p.value
+ T1 - T2   0.275339 0.456998 338.46 -0.800466 1.351145   0.602  0.8188
+ T1 - T3  -0.123996 0.479665 340.22 -1.253136 1.005143  -0.259  0.9638
+ T2 - T3  -0.399336 0.484485 328.46 -1.540000 0.741329  -0.824  0.6882
+
+Results are averaged over the levels of: Gender 
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+Conf-level adjustment: tukey method for comparing a family of 3 estimates 
+P value adjustment: tukey method for comparing a family of 3 estimates 
+Subgroup = F:
+ contrast  estimate       SE     df lower.CL upper.CL t.ratio p.value
+ T1 - T2   2.930890 0.433736 332.26  1.90976  3.95202   6.757  <.0001
+ T1 - T3   0.114763 0.461013 335.27 -0.97054  1.20007   0.249  0.9664
+ T2 - T3  -2.816127 0.463400 329.21 -3.90714 -1.72511  -6.077  <.0001
+
+Results are averaged over the levels of: Gender 
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+Conf-level adjustment: tukey method for comparing a family of 3 estimates 
+P value adjustment: tukey method for comparing a family of 3 estimates 
+Subgroup = M:
+ contrast estimate       SE     df lower.CL upper.CL t.ratio p.value
+ T1 - T2   3.52538 0.429530 331.05  2.51414  4.53663   8.208  <.0001
+ T1 - T3   0.35047 0.464872 334.79 -0.74393  1.44486   0.754  0.7315
+ T2 - T3  -3.17491 0.466720 330.16 -4.27373 -2.07610  -6.803  <.0001
+
+Results are averaged over the levels of: Gender 
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+Conf-level adjustment: tukey method for comparing a family of 3 estimates 
+P value adjustment: tukey method for comparing a family of 3 estimates 
+Subgroup = R:
+ contrast estimate       SE     df lower.CL upper.CL t.ratio p.value
+ T1 - T2   2.75658 0.434115 331.20  1.73454  3.77861   6.350  <.0001
+ T1 - T3  -0.52912 0.457006 333.85 -1.60501  0.54677  -1.158  0.4793
+ T2 - T3  -3.28570 0.459049 328.67 -4.36647 -2.20492  -7.158  <.0001
+
+Results are averaged over the levels of: Gender 
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+Conf-level adjustment: tukey method for comparing a family of 3 estimates 
+P value adjustment: tukey method for comparing a family of 3 estimates 
+Wave = T1:
+ contrast   estimate       SE     df lower.CL upper.CL t.ratio p.value
+ C - F    -0.2015313 0.829375 265.02 -2.34580  1.94274  -0.243  0.9949
+ C - M    -0.2906877 0.830542 264.82 -2.43799  1.85661  -0.350  0.9853
+ C - R    -0.1162494 0.836598 264.50 -2.27922  2.04672  -0.139  0.9990
+ F - M    -0.0891564 0.828510 264.48 -2.23122  2.05290  -0.108  0.9996
+ F - R     0.0852819 0.830246 264.88 -2.06125  2.23181   0.103  0.9996
+ M - R     0.1744383 0.838604 263.50 -1.99377  2.34265   0.208  0.9968
+
+Results are averaged over the levels of: Gender 
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+Conf-level adjustment: tukey method for comparing a family of 4 estimates 
+P value adjustment: tukey method for comparing a family of 4 estimates 
+Wave = T2:
+ contrast  estimate       SE     df  lower.CL upper.CL t.ratio p.value
+ C - F     2.454019 0.858694 293.20  0.235305  4.67273   2.858  0.0235
+ C - M     2.959357 0.858261 291.35  0.741679  5.17703   3.448  0.0036
+ C - R     2.364987 0.863758 290.23  0.133056  4.59692   2.738  0.0331
+ F - M     0.505338 0.845594 280.84 -1.680082  2.69076   0.598  0.9327
+ F - R    -0.089032 0.848300 282.18 -2.281383  2.10332  -0.105  0.9996
+ M - R    -0.594370 0.854149 278.21 -2.802024  1.61329  -0.696  0.8986
+
+Results are averaged over the levels of: Gender 
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+Conf-level adjustment: tukey method for comparing a family of 4 estimates 
+P value adjustment: tukey method for comparing a family of 4 estimates 
+Wave = T3:
+ contrast  estimate       SE     df lower.CL upper.CL t.ratio p.value
+ C - F     0.037228 0.884847 320.46 -2.24794  2.32240   0.042  1.0000
+ C - M     0.183778 0.888789 323.22 -2.11147  2.47903   0.207  0.9969
+ C - R    -0.521376 0.887573 314.95 -2.81380  1.77105  -0.587  0.9358
+ F - M     0.146550 0.878443 315.33 -2.12228  2.41538   0.167  0.9983
+ F - R    -0.558604 0.874378 309.53 -2.81716  1.69995  -0.639  0.9193
+ M - R    -0.705154 0.884942 310.26 -2.99097  1.58066  -0.797  0.8558
+
+Results are averaged over the levels of: Gender 
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+Conf-level adjustment: tukey method for comparing a family of 4 estimates 
+P value adjustment: tukey method for comparing a family of 4 estimates 
+Data: data
+Models:
+model_no_int: formula_no_int
+model: formula
+             npar     AIC     BIC   logLik -2*log(L)   Chisq Df Pr(>Chisq)    
+model_no_int   10 2642.83 2685.65 -1311.41   2622.83                          
+model          16 2604.67 2673.19 -1286.34   2572.67 50.1593  6 4.3677e-09 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Model Summary
+
+────────────────────────────────
+                     (1) Anxiety
+────────────────────────────────
+(Intercept)             7.09 ***
+                       (1.42)   
+SubgroupF               0.37    
+                       (0.68)   
+SubgroupM              -0.01    
+                       (0.68)   
+SubgroupR              -0.07    
+                       (0.68)   
+WaveT2                  0.21    
+                       (0.41)   
+WaveT3                 -0.18    
+                       (0.43)   
+Age                    -0.10    
+                       (0.06)   
+GenderMale             -0.19    
+                       (0.43)   
+SubgroupF:WaveT2       -3.51 ***
+                       (0.57)   
+SubgroupM:WaveT2       -3.28 ***
+                       (0.57)   
+SubgroupR:WaveT2       -2.75 ***
+                       (0.57)   
+SubgroupF:WaveT3       -2.84 ***
+                       (0.60)   
+SubgroupM:WaveT3       -2.55 ***
+                       (0.61)   
+SubgroupR:WaveT3       -2.23 ***
+                       (0.60)   
+────────────────────────────────
+Marginal R^2            0.16    
+Conditional R^2         0.73    
+AIC                  2608.56    
+BIC                  2677.08    
+Num. obs.             535       
+Num. groups: ID       202       
+Var: ID (Intercept)     7.89    
+Var: Residual           3.63    
+────────────────────────────────
+Note. * p < .05, ** p < .01, *** p < .001.
+
+Wave = T1:
+ Subgroup  emmean       SE     df lower.CL upper.CL t.ratio p.value
+ C        4.63157 0.479901 286.57  3.68699  5.57614   9.651  <.0001
+ F        4.99736 0.475584 286.41  4.06128  5.93344  10.508  <.0001
+ M        4.61977 0.476925 285.87  3.68104  5.55850   9.687  <.0001
+ R        4.56446 0.483633 285.12  3.61252  5.51641   9.438  <.0001
+
+Wave = T2:
+ Subgroup  emmean       SE     df lower.CL upper.CL t.ratio p.value
+ C        4.83811 0.507103 329.59  3.84055  5.83568   9.541  <.0001
+ F        1.69637 0.488866 308.09  0.73443  2.65830   3.470  0.0006
+ M        1.54791 0.487948 303.71  0.58772  2.50810   3.172  0.0017
+ R        2.01993 0.494057 301.74  1.04769  2.99216   4.088  0.0001
+
+Wave = T3:
+ Subgroup  emmean       SE     df lower.CL upper.CL t.ratio p.value
+ C        4.45545 0.523892 358.41  3.42516  5.48574   8.505  <.0001
+ F        1.97783 0.508816 343.65  0.97704  2.97861   3.887  0.0001
+ M        1.89211 0.514141 350.42  0.88092  2.90330   3.680  0.0003
+ R        2.16245 0.510767 331.37  1.15770  3.16721   4.234  <.0001
+
+Results are averaged over the levels of: Gender 
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+Subgroup = C:
+ contrast  estimate       SE     df  lower.CL upper.CL t.ratio p.value
+ T1 - T2  -0.206544 0.414763 341.42 -1.182888 0.769799  -0.498  0.8723
+ T1 - T3   0.176117 0.435163 343.83 -0.848217 1.200451   0.405  0.9137
+ T2 - T3   0.382662 0.440664 329.62 -0.654815 1.420138   0.868  0.6606
+
+Results are averaged over the levels of: Gender 
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+Conf-level adjustment: tukey method for comparing a family of 3 estimates 
+P value adjustment: tukey method for comparing a family of 3 estimates 
+Subgroup = F:
+ contrast estimate       SE     df lower.CL upper.CL t.ratio p.value
+ T1 - T2   3.30099 0.394182 333.95  2.37301  4.22898   8.374  <.0001
+ T1 - T3   3.01953 0.418690 337.91  2.03390  4.00516   7.212  <.0001
+ T2 - T3  -0.28146 0.421416 330.58 -1.27361  0.71068  -0.668  0.7823
+
+Results are averaged over the levels of: Gender 
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+Conf-level adjustment: tukey method for comparing a family of 3 estimates 
+P value adjustment: tukey method for comparing a family of 3 estimates 
+Subgroup = M:
+ contrast  estimate       SE     df lower.CL upper.CL t.ratio p.value
+ T1 - T2   3.071864 0.390463 332.47  2.15261  3.99112   7.867  <.0001
+ T1 - T3   2.727660 0.422237 337.40  1.73367  3.72165   6.460  <.0001
+ T2 - T3  -0.344204 0.424344 331.81 -1.34323  0.65482  -0.811  0.6964
+
+Results are averaged over the levels of: Gender 
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+Conf-level adjustment: tukey method for comparing a family of 3 estimates 
+P value adjustment: tukey method for comparing a family of 3 estimates 
+Subgroup = R:
+ contrast  estimate       SE     df lower.CL upper.CL t.ratio p.value
+ T1 - T2   2.544536 0.394618 332.64  1.61550  3.47357   6.448  <.0001
+ T1 - T3   2.402010 0.415180 336.12  1.42461  3.37940   5.785  <.0001
+ T2 - T3  -0.142527 0.417509 329.89 -1.12549  0.84043  -0.341  0.9378
+
+Results are averaged over the levels of: Gender 
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+Conf-level adjustment: tukey method for comparing a family of 3 estimates 
+P value adjustment: tukey method for comparing a family of 3 estimates 
+Wave = T1:
+ contrast  estimate       SE     df lower.CL upper.CL t.ratio p.value
+ C - F    -0.365791 0.675668 286.48 -2.11184  1.38025  -0.541  0.9488
+ C - M     0.011793 0.676582 286.22 -1.73662  1.76021   0.017  1.0000
+ C - R     0.067106 0.681457 285.80 -1.69392  1.82814   0.098  0.9997
+ F - M     0.377585 0.674864 285.77 -1.36641  2.12158   0.559  0.9439
+ F - R     0.432897 0.676351 286.29 -1.31492  2.18071   0.640  0.9189
+ M - R     0.055312 0.682907 284.49 -1.70951  1.82014   0.081  0.9998
+
+Results are averaged over the levels of: Gender 
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+Conf-level adjustment: tukey method for comparing a family of 4 estimates 
+P value adjustment: tukey method for comparing a family of 4 estimates 
+Wave = T2:
+ contrast estimate       SE     df  lower.CL upper.CL t.ratio p.value
+ C - F     3.14175 0.704371 319.17  1.322626  4.96087   4.460  0.0001
+ C - M     3.29020 0.703710 316.98  1.472723  5.10768   4.676  <.0001
+ C - R     2.81819 0.708029 315.64  0.989511  4.64686   3.980  0.0005
+ F - M     0.14845 0.691595 304.84 -1.638113  1.93502   0.215  0.9965
+ F - R    -0.32356 0.694036 306.45 -2.116383  1.46926  -0.466  0.9664
+ M - R    -0.47202 0.698138 301.66 -2.275592  1.33156  -0.676  0.9061
+
+Results are averaged over the levels of: Gender 
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+Conf-level adjustment: tukey method for comparing a family of 4 estimates 
+P value adjustment: tukey method for comparing a family of 4 estimates 
+Wave = T3:
+ contrast  estimate       SE     df  lower.CL upper.CL t.ratio p.value
+ C - F     2.477623 0.730318 351.26  0.592401  4.36284   3.393  0.0043
+ C - M     2.563336 0.734016 354.55  0.668652  4.45802   3.492  0.0030
+ C - R     2.292998 0.731686 344.92  0.404078  4.18192   3.134  0.0101
+ F - M     0.085713 0.724253 345.91 -1.783992  1.95542   0.118  0.9994
+ F - R    -0.184624 0.719970 339.10 -2.043455  1.67421  -0.256  0.9941
+ M - R    -0.270338 0.728794 340.05 -2.151923  1.61125  -0.371  0.9826
+
+Results are averaged over the levels of: Gender 
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+Conf-level adjustment: tukey method for comparing a family of 4 estimates 
+P value adjustment: tukey method for comparing a family of 4 estimates 
+Data: data
+Models:
+model_no_int: formula_no_int
+model: formula
+             npar     AIC     BIC   logLik -2*log(L)   Chisq Df Pr(>Chisq)  
+model_no_int   10 2805.47 2848.30 -1392.74   2785.47                        
+model          16 2804.95 2873.46 -1386.47   2772.95 12.5283  6    0.05117 .
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Model Summary
+
+────────────────────────────────
+                     (1) Stress 
+────────────────────────────────
+(Intercept)             7.28 ***
+                       (1.71)   
+SubgroupF              -0.12    
+                       (0.81)   
+SubgroupM              -0.60    
+                       (0.82)   
+SubgroupR               0.08    
+                       (0.82)   
+WaveT2                 -0.27    
+                       (0.50)   
+WaveT3                 -0.45    
+                       (0.52)   
+Age                    -0.01    
+                       (0.07)   
+GenderMale             -0.53    
+                       (0.52)   
+SubgroupF:WaveT2       -0.59    
+                       (0.69)   
+SubgroupM:WaveT2       -0.46    
+                       (0.69)   
+SubgroupR:WaveT2       -2.07 ** 
+                       (0.69)   
+SubgroupF:WaveT3       -0.33    
+                       (0.73)   
+SubgroupM:WaveT3       -0.16    
+                       (0.73)   
+SubgroupR:WaveT3       -0.29    
+                       (0.73)   
+────────────────────────────────
+Marginal R^2            0.03    
+Conditional R^2         0.69    
+AIC                  2803.60    
+BIC                  2872.11    
+Num. obs.             535       
+Num. groups: ID       202       
+Var: ID (Intercept)    11.45    
+Var: Residual           5.28    
+────────────────────────────────
+Note. * p < .05, ** p < .01, *** p < .001.
+
+Wave = T1:
+ Subgroup  emmean       SE     df lower.CL upper.CL t.ratio p.value
+ C        6.68879 0.578464 286.72  5.55021  7.82736  11.563  <.0001
+ F        6.56884 0.573261 286.57  5.44050  7.69718  11.459  <.0001
+ M        6.08385 0.574877 286.03  4.95233  7.21538  10.583  <.0001
+ R        6.76462 0.582962 285.27  5.61717  7.91207  11.604  <.0001
+
+Wave = T2:
+ Subgroup  emmean       SE     df lower.CL upper.CL t.ratio p.value
+ C        6.41603 0.611290 329.78  5.21351  7.61855  10.496  <.0001
+ F        5.70736 0.589289 308.27  4.54782  6.86690   9.685  <.0001
+ M        5.35580 0.588179 303.88  4.19838  6.51322   9.106  <.0001
+ R        4.41828 0.595542 301.92  3.24634  5.59021   7.419  <.0001
+
+Wave = T3:
+ Subgroup  emmean       SE     df lower.CL upper.CL t.ratio p.value
+ C        6.23941 0.631552 358.63  4.99739  7.48142   9.879  <.0001
+ F        5.78680 0.613366 343.86  4.58038  6.99323   9.434  <.0001
+ M        5.47497 0.619791 350.63  4.25600  6.69395   8.834  <.0001
+ R        6.02595 0.615709 331.58  4.81476  7.23714   9.787  <.0001
+
+Results are averaged over the levels of: Gender 
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+Subgroup = C:
+ contrast estimate       SE     df  lower.CL upper.CL t.ratio p.value
+ T1 - T2  0.272758 0.500289 341.44 -0.904912  1.45043   0.545  0.8490
+ T1 - T3  0.449382 0.524894 343.85 -0.786171  1.68494   0.856  0.6683
+ T2 - T3  0.176624 0.531539 329.63 -1.074805  1.42805   0.332  0.9410
+
+Results are averaged over the levels of: Gender 
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+Conf-level adjustment: tukey method for comparing a family of 3 estimates 
+P value adjustment: tukey method for comparing a family of 3 estimates 
+Subgroup = F:
+ contrast  estimate       SE     df  lower.CL upper.CL t.ratio p.value
+ T1 - T2   0.861479 0.475468 333.96 -0.257873  1.98083   1.812  0.1672
+ T1 - T3   0.782036 0.505028 337.93 -0.406845  1.97092   1.548  0.2697
+ T2 - T3  -0.079444 0.508321 330.60 -1.276193  1.11730  -0.156  0.9866
+
+Results are averaged over the levels of: Gender 
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+Conf-level adjustment: tukey method for comparing a family of 3 estimates 
+P value adjustment: tukey method for comparing a family of 3 estimates 
+Subgroup = M:
+ contrast  estimate       SE     df  lower.CL upper.CL t.ratio p.value
+ T1 - T2   0.728055 0.470984 332.48 -0.380764  1.83687   1.546  0.2709
+ T1 - T3   0.608880 0.509307 337.42 -0.590080  1.80784   1.196  0.4567
+ T2 - T3  -0.119175 0.511853 331.82 -1.324219  1.08587  -0.233  0.9706
+
+Results are averaged over the levels of: Gender 
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+Conf-level adjustment: tukey method for comparing a family of 3 estimates 
+P value adjustment: tukey method for comparing a family of 3 estimates 
+Subgroup = R:
+ contrast  estimate       SE     df  lower.CL upper.CL t.ratio p.value
+ T1 - T2   2.346344 0.475996 332.65  1.225730  3.46696   4.929  <.0001
+ T1 - T3   0.738669 0.500796 336.14 -0.440277  1.91761   1.475  0.3043
+ T2 - T3  -1.607675 0.503610 329.90 -2.793344 -0.42201  -3.192  0.0044
+
+Results are averaged over the levels of: Gender 
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+Conf-level adjustment: tukey method for comparing a family of 3 estimates 
+P value adjustment: tukey method for comparing a family of 3 estimates 
+Wave = T1:
+ contrast  estimate       SE     df lower.CL upper.CL t.ratio p.value
+ C - F     0.119948 0.814439 286.64 -1.98470  2.22459   0.147  0.9989
+ C - M     0.604933 0.815541 286.37 -1.50257  2.71244   0.742  0.8801
+ C - R    -0.075832 0.821417 285.96 -2.19854  2.04687  -0.092  0.9997
+ F - M     0.484986 0.813470 285.92 -1.61719  2.58716   0.596  0.9332
+ F - R    -0.195780 0.815263 286.45 -2.30256  1.91100  -0.240  0.9951
+ M - R    -0.680766 0.823163 284.64 -2.80804  1.44651  -0.827  0.8416
+
+Results are averaged over the levels of: Gender 
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+Conf-level adjustment: tukey method for comparing a family of 4 estimates 
+P value adjustment: tukey method for comparing a family of 4 estimates 
+Wave = T2:
+ contrast estimate       SE     df  lower.CL upper.CL t.ratio p.value
+ C - F    0.708669 0.849077 319.36 -1.484164  2.90150   0.835  0.8380
+ C - M    1.060230 0.848277 317.17 -1.130618  3.25108   1.250  0.5956
+ C - R    1.997754 0.853482 315.82 -0.206586  4.20209   2.341  0.0911
+ F - M    0.351561 0.833659 305.01 -1.801989  2.50511   0.422  0.9747
+ F - R    1.289085 0.836604 306.63 -0.872010  3.45018   1.541  0.4144
+ M - R    0.937524 0.841543 301.83 -1.236519  3.11157   1.114  0.6812
+
+Results are averaged over the levels of: Gender 
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+Conf-level adjustment: tukey method for comparing a family of 4 estimates 
+P value adjustment: tukey method for comparing a family of 4 estimates 
+Wave = T3:
+ contrast  estimate       SE     df lower.CL upper.CL t.ratio p.value
+ C - F     0.452601 0.880391 351.48 -1.82001  2.72521   0.514  0.9557
+ C - M     0.764431 0.884853 354.76 -1.51959  3.04846   0.864  0.8234
+ C - R     0.213455 0.882033 345.13 -2.06359  2.49050   0.242  0.9950
+ F - M     0.311830 0.873074 346.12 -1.94206  2.56572   0.357  0.9844
+ F - R    -0.239146 0.867903 339.31 -2.47991  2.00161  -0.276  0.9927
+ M - R    -0.550976 0.878541 340.26 -2.81917  1.71722  -0.627  0.9233
+
+Results are averaged over the levels of: Gender 
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+Conf-level adjustment: tukey method for comparing a family of 4 estimates 
+P value adjustment: tukey method for comparing a family of 4 estimates 
+Data: data
+Models:
+model_no_int: formula_no_int
+model: formula
+             npar     AIC     BIC   logLik -2*log(L)   Chisq Df Pr(>Chisq)    
+model_no_int   10 2356.78 2399.61 -1168.39   2336.78                          
+model          16 2282.72 2351.24 -1125.36   2250.72 86.0644  6 < 2.22e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Model Summary
+
+───────────────────────────────────
+                     (1) Loneliness
+───────────────────────────────────
+(Intercept)             5.97 ***   
+                       (0.89)      
+SubgroupF              -0.51       
+                       (0.45)      
+SubgroupM              -0.13       
+                       (0.45)      
+SubgroupR              -0.37       
+                       (0.45)      
+WaveT2                  0.40       
+                       (0.34)      
+WaveT3                  0.23       
+                       (0.35)      
+Age                     0.04       
+                       (0.03)      
+GenderMale              0.05       
+                       (0.27)      
+SubgroupF:WaveT2       -3.47 ***   
+                       (0.47)      
+SubgroupM:WaveT2       -3.85 ***   
+                       (0.47)      
+SubgroupR:WaveT2       -1.83 ***   
+                       (0.47)      
+SubgroupF:WaveT3       -0.49       
+                       (0.49)      
+SubgroupM:WaveT3       -0.51       
+                       (0.50)      
+SubgroupR:WaveT3        0.14       
+                       (0.49)      
+───────────────────────────────────
+Marginal R^2            0.27       
+Conditional R^2         0.64       
+AIC                  2295.53       
+BIC                  2364.04       
+Num. obs.             535          
+Num. groups: ID       202          
+Var: ID (Intercept)     2.60       
+Var: Residual           2.46       
+───────────────────────────────────
+Note. * p < .05, ** p < .01, *** p < .001.
+
+Wave = T1:
+ Subgroup  emmean       SE     df lower.CL upper.CL t.ratio p.value
+ C        7.00295 0.318177 354.04  6.37719  7.62870  22.010  <.0001
+ F        6.49392 0.315285 353.77  5.87385  7.11399  20.597  <.0001
+ M        6.87239 0.316075 352.88  6.25076  7.49402  21.743  <.0001
+ R        6.63489 0.320378 351.62  6.00479  7.26499  20.710  <.0001
+
+Wave = T2:
+ Subgroup  emmean       SE     df lower.CL upper.CL t.ratio p.value
+ C        7.40206 0.342993 400.44  6.72777  8.07635  21.581  <.0001
+ F        3.42621 0.327508 378.40  2.78225  4.07018  10.461  <.0001
+ M        3.42523 0.326196 373.10  2.78382  4.06664  10.501  <.0001
+ R        5.20175 0.329957 370.65  4.55293  5.85057  15.765  <.0001
+
+Wave = T3:
+ Subgroup  emmean       SE     df lower.CL upper.CL t.ratio p.value
+ C        7.23620 0.358962 431.97  6.53067  7.94173  20.159  <.0001
+ F        6.24049 0.346603 419.82  5.55919  6.92178  18.005  <.0001
+ M        6.59434 0.351323 427.60  5.90381  7.28488  18.770  <.0001
+ R        7.01056 0.346027 406.56  6.33034  7.69079  20.260  <.0001
+
+Results are averaged over the levels of: Gender 
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+Subgroup = C:
+ contrast  estimate       SE     df lower.CL upper.CL t.ratio p.value
+ T1 - T2  -0.399108 0.338967 348.60 -1.19696 0.398741  -1.177  0.4675
+ T1 - T3  -0.233252 0.355145 353.28 -1.06913 0.602629  -0.657  0.7886
+ T2 - T3   0.165857 0.362228 333.49 -0.68691 1.018624   0.458  0.8909
+
+Results are averaged over the levels of: Gender 
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+Conf-level adjustment: tukey method for comparing a family of 3 estimates 
+P value adjustment: tukey method for comparing a family of 3 estimates 
+Subgroup = F:
+ contrast  estimate       SE     df lower.CL upper.CL t.ratio p.value
+ T1 - T2   3.067707 0.323360 338.32  2.30649  3.82892   9.487  <.0001
+ T1 - T3   0.253433 0.342703 345.35 -0.55324  1.06011   0.740  0.7402
+ T2 - T3  -2.814274 0.346222 335.12 -3.62934 -1.99921  -8.129  <.0001
+
+Results are averaged over the levels of: Gender 
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+Conf-level adjustment: tukey method for comparing a family of 3 estimates 
+P value adjustment: tukey method for comparing a family of 3 estimates 
+Subgroup = M:
+ contrast estimate       SE     df lower.CL upper.CL t.ratio p.value
+ T1 - T2   3.44716 0.320554 336.20  2.69253  4.20179  10.754  <.0001
+ T1 - T3   0.27805 0.345678 344.99 -0.53563  1.09173   0.804  0.7006
+ T2 - T3  -3.16911 0.348392 337.20 -3.98926 -2.34896  -9.096  <.0001
+
+Results are averaged over the levels of: Gender 
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+Conf-level adjustment: tukey method for comparing a family of 3 estimates 
+P value adjustment: tukey method for comparing a family of 3 estimates 
+Subgroup = R:
+ contrast  estimate       SE     df  lower.CL  upper.CL t.ratio p.value
+ T1 - T2   1.433140 0.323937 336.42  0.670548  2.195732   4.424  <.0001
+ T1 - T3  -0.375671 0.340154 342.53 -1.176375  0.425034  -1.104  0.5120
+ T2 - T3  -1.808811 0.343146 333.94 -2.616648 -1.000973  -5.271  <.0001
+
+Results are averaged over the levels of: Gender 
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+Conf-level adjustment: tukey method for comparing a family of 3 estimates 
+P value adjustment: tukey method for comparing a family of 3 estimates 
+Wave = T1:
+ contrast  estimate       SE     df  lower.CL upper.CL t.ratio p.value
+ C - F     0.509028 0.447949 353.89 -0.647252 1.665308   1.136  0.6673
+ C - M     0.130558 0.448486 353.46 -1.027115 1.288232   0.291  0.9914
+ C - R     0.368058 0.451606 352.76 -0.797681 1.533797   0.815  0.8474
+ F - M    -0.378470 0.447228 352.70 -1.532908 0.775969  -0.846  0.8323
+ F - R    -0.140970 0.448352 353.58 -1.298295 1.016355  -0.314  0.9892
+ M - R     0.237500 0.452217 350.57 -0.929850 1.404849   0.525  0.9530
+
+Results are averaged over the levels of: Gender 
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+Conf-level adjustment: tukey method for comparing a family of 4 estimates 
+P value adjustment: tukey method for comparing a family of 4 estimates 
+Wave = T2:
+ contrast estimate       SE     df  lower.CL upper.CL t.ratio p.value
+ C - F     3.97584 0.474268 390.14  2.752166  5.19952   8.383  <.0001
+ C - M     3.97683 0.473333 387.56  2.755526  5.19813   8.402  <.0001
+ C - R     2.20031 0.475925 385.88  0.972296  3.42832   4.623  <.0001
+ F - M     0.00098 0.462574 374.29 -1.192740  1.19471   0.002  1.0000
+ F - R    -1.77554 0.464580 376.31 -2.974408 -0.57666  -3.822  0.0009
+ M - R    -1.77652 0.466205 370.17 -2.979672 -0.57337  -3.811  0.0009
+
+Results are averaged over the levels of: Gender 
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+Conf-level adjustment: tukey method for comparing a family of 4 estimates 
+P value adjustment: tukey method for comparing a family of 4 estimates 
+Wave = T3:
+ contrast  estimate       SE     df  lower.CL upper.CL t.ratio p.value
+ C - F     0.995712 0.499011 426.28 -0.291333 2.282757   1.995  0.1913
+ C - M     0.641858 0.502289 430.00 -0.653599 1.937314   1.278  0.5775
+ C - R     0.225639 0.498559 419.68 -1.060321 1.511599   0.453  0.9691
+ F - M    -0.353854 0.493863 422.33 -1.627670 0.919962  -0.717  0.8905
+ F - R    -0.770073 0.489442 414.88 -2.032576 0.492430  -1.573  0.3950
+ M - R    -0.416219 0.495679 416.15 -1.694793 0.862356  -0.840  0.8355
+
+Results are averaged over the levels of: Gender 
+Degrees-of-freedom method: kenward-roger 
+Confidence level used: 0.95 
+Conf-level adjustment: tukey method for comparing a family of 4 estimates 
+P value adjustment: tukey method for comparing a family of 4 estimates 
+
+稳健性检验结果: 未发现系数显著且符号相反的参数，结果稳健。
+
+稳健性检验结果: 未发现系数显著且符号相反的参数，结果稳健。
+
+稳健性检验结果: 未发现系数显著且符号相反的参数，结果稳健。
+
+稳健性检验结果: 未发现系数显著且符号相反的参数，结果稳健。
+✔ Table saved to 'D:/OneDrive/Mark/20240619_提示工程/_论文/_存档与审批/存档：心理学报-20240815/3.文章最终稿/xb24-389一审/xb24-389二审/xb24-389三审/xb24-389校对/xb24-389存档/1.数据及分析代码（可一键运行）/all_models_standardized.doc'
+
+✔ Table saved to 'D:/OneDrive/Mark/20240619_提示工程/_论文/_存档与审批/存档：心理学报-20240815/3.文章最终稿/xb24-389一审/xb24-389二审/xb24-389三审/xb24-389校对/xb24-389存档/1.数据及分析代码（可一键运行）/all_models_unstandardized.doc'
+
